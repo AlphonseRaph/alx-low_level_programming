@@ -1,8 +1,12 @@
 #include<stdio.h>
 #include<time.h>
-/* more headers goes there */
+#include<stdlib.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Assigns variables
+ *
+ * Return: always 0.
+ */
 int main(void)
 {
 	int n;
@@ -10,14 +14,18 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
+{
+	printf("%d is positive", n);
+	}
+	else if (n == 0)
 	{
-		printf("is positive")
-	elseif(n = 0)
+	printf("%d is zero", n);
+	}
+	else if (n < 0)
 	{
-		printf("is zero")
-	elseif(n < 0)
-	{
-		printf("is negative")
+	printf("%d is negative", n);
+	}
 	return (0);
 }
+
 
