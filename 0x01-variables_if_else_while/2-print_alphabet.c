@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-ch = 0
+int = 0
 int ch;
 for (ch = 'A'; ch <= 'Z'; ch++)
 int tolower(int ch;)
