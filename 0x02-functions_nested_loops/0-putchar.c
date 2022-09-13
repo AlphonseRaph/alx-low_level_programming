@@ -31,7 +31,7 @@ int main(void)
 	putchar(ch);
 	ch = 'r';
 	putchar(ch);
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
 
