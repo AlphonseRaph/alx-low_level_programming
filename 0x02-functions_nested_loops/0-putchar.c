@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
  */
 
-void main.h(char* ch)
+void main.h(char* ch);
 int main(void)
 {
 	char ch;
