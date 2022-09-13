@@ -1,6 +1,6 @@
 /*Header files go here*/
 int _putchar(char ch);
-void print_alphabet(void);
+void _print_alphabet(void);
 {
 	int i;
 
