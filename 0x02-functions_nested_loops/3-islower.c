@@ -4,6 +4,8 @@
 /**
  * _islower - check for lowercase character
  *
+ * @c: Integer to be checked
+ *
  * Return: Always 0 (Success)
  */
 
