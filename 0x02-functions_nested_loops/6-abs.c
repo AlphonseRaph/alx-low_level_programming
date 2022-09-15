@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * _abs -co mpute absolute value of integer
+ * _abs - Entry point
  * Return: Always 0 (Success)
  */
 
 int _abs(int)
 {
-	int = |int|
-		_putchar(int)
+	int c;
+
+	c  = | c |
+		_putchar(c)
 	return (0);
 }
