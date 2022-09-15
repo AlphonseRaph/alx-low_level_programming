@@ -5,11 +5,9 @@
  * Return: Always 0 (Success)
  */
 
-int _abs(int)
+int _abs(int c)
 {
-	int c;
-
-	c  = | c |
-		_putchar(c)
-	return (0);
+	if (c > 0)
+		c = c* -1
+	return (c);
 }
