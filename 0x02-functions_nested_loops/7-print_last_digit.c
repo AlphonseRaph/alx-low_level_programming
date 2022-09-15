@@ -3,7 +3,7 @@
 /**
  * print_last_digit - Print last digit
  *
- * @c - To be checked
+ * @c: To be checked
  *
  * Return: Always 0.
  */
@@ -17,6 +17,6 @@ int print_last_digit(int c);
 	{
 		LD = LD * -1;
 	}
-	_putchar(num + '0');
+	_putchar(LD + '0');
 	return (LD);
 }
