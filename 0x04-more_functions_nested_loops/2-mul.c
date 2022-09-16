@@ -2,17 +2,12 @@
 
 /**
  * mul - multiply two integers
- *
- * Return: 0 Always (Success)
+ * @a: Integer
+ * @b: Integer
+ * Return: product
  */
 
 int mul(int a, int b)
 {
-	a;
-	b;
-
-	mul = a * b
-		_putchar(mul);
-	_putchar('\n');
-	return (0);
+	return (a * b);
 }
