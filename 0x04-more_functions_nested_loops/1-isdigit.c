@@ -8,9 +8,9 @@
  *Return: 1 if digit, 0 otherwise
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
-	for (c >= 1 && c <= 9)
+	if (c >= 1 && c <= 9)
 		return (1);
 	else
 		return (0);
