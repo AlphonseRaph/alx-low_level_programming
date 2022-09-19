@@ -12,10 +12,7 @@
 
 void swap_int(int *a, int *b)
 {
-	int x, y, temp;
 
-	*a = &x;
-	*b = &y;
-	temp = *b;
-	*a = temp
+	*a = 10;
+	*b = &a;
 }
