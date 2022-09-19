@@ -12,9 +12,11 @@
 
 void swap_int(int *a, int *b)
 {
-	int temp;
+	int INT_MAX;
+	int INT_MIN;
 
-	temp = *b;
-	*a = *b;
-	*a = temp;
+	INT_MAX = 1024
+	*a = 98
+	*b = 42
+	INT_MAX = -4096
 }
