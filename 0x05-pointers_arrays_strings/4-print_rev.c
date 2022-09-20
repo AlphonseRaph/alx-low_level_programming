@@ -10,7 +10,7 @@
  * Return: Nothing
  */
 
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int leng g;
 
