@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-int i;
-while (i = 0, i < 10)
+int i = 48;
+while (i <= 57)
 {
 	putchar(i);
 	putchar(',');
