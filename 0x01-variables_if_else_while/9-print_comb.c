@@ -3,19 +3,19 @@
 /**
  * main - Entry point
  *
- * Return: Alwatys 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 int i = 48;
-while (i <= 57)
+while (i < 57)
 {
 	putchar(i);
-	if (i == 57)
-		break;
 	putchar(',');
 	putchar(' ');
 	i++;
 }
+if (i == 57)
+	putchar(i);
 return (0);
 }
