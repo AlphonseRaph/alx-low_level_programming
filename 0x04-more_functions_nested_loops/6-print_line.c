@@ -9,9 +9,9 @@
 void print_line(int n);
 {
 	int i;
-	for(i = 48; i <= n; i++)
+	for(i = 0; i <= n; i++)
 	{
-		if (n <= 48)
+		if (n <= 0)
 			{
 				_putchar('\n');
 			}
