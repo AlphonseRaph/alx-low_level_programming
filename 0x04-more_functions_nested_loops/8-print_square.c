@@ -8,16 +8,16 @@
  * Return: no return
  */
 
-void print_square(int size);
+void print_square(int size)
 {
 	int i, z;
-	for (i = 0; i < n; i++)
+
+	for (i = 0; i < size; i++)
 	{
-		for (z = 0; z < n; z++)
+		for (z = 0; z < size; z++)
 		{
 			putchar('#');
 		}
+	putchar('\n');
 	}
 }
-
-		
