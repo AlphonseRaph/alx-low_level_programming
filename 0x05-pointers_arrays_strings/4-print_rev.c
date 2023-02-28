@@ -1,22 +1,23 @@
 #include "main.h"
 
 /**
- * print_rev - Print 
+ * print_rev - Print in reverse
  *
- * @leng: int 1
- * @g: int 2
- *
+ * @s: pointer to string
  * Return: Nothing
  */
 
 void print_rev(char *s)
 {
 	int len = 0;
-	int g;
+	int last;
+	int a;
 
-	while ((*s + len) != '\0')
+	while (*(s + len) != '\0')
 		len++;
-	for (g = len-1; g >= 0; g--)
-		_putchar(s[g]);
+	last = len - 1;
+
+	for (a = last; a >= 0; a--)
+		_putchar(*(s + a));
 	 _putchar('\n');
 }
