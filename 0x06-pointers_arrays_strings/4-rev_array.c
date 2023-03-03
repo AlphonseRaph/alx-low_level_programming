@@ -10,19 +10,15 @@
 
 void reverse_array(int *a, int n)
 {
-	int i;
-	int y;
-	char Alphonse;
+	int i = 0;
+	int Alphonse;
 
-	y = 0;
 	i = n - 1;
-	while (*(a + y) != '\0')
+	while (i >= n / 2)
 	{
-		i--;
-		Alphonse = a[i];
-	 	a[y] = a[i];
+		Alphonse = a[n - 1 - i];
+		a[n - 1 - i] = a[i];
 		a[i] = Alphonse;
-		y++;
+		i--;
 	}
 }
-	
