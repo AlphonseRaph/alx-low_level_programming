@@ -4,7 +4,8 @@
 /**
  * main - function
  *
- * @argv - array containing variables
+ * @argc: counts number of arguments
+ * @argv: pointer to array of arguments
  * Return: 0
  */
 
