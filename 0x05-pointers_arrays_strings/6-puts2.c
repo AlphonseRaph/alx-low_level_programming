@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - print every character, starting with the first, followed by a newline
+ * puts2 - print every character,starting with the 1st,followed by a newline
  *
  * @str: pointer to string
  *
@@ -11,12 +11,17 @@
 void puts2(char *str)
 {
 	int len;
-       	
-	for (len = 0; len != '\0';)
+	int a;
+
+	len = 0;
+	while (*(str + len) != '\0')
+		len++;
+	for (a = 0; a < len;)
 	{
-		_putchar(*(str + len));
-		len = len + 2;
+		_putchar(str[a]);
+		a = a + 2;
 	}
+	_putchar('\n');
 }
 
 
