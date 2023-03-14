@@ -5,8 +5,8 @@
 /**
  * create_array - creates an array of chars
  *
- * @unsigned int size: size of unsigned int
- * @char c: character
+ * @size: size of unsigned int
+ * @c: character
  * Return: char
  */
 
@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	if (str == NULL)
 		return (str);
-	for(i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		str[i] = c;
 return (str);
 }
