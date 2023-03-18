@@ -5,8 +5,9 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-	times_tables();
+	times_table();
 	return (0);
 }
