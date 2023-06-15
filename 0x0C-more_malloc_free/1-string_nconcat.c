@@ -3,18 +3,20 @@
 #include "main.h"
 
 /**
- * string_nconcat - concatenates two strings.
+ * *string_nconcat - concatenates two strings.
  *
  * @s1: string one
  * @s2: string two
- * @n2: size of string two
+ * @n: size of string two
+ *
+ * Return: a pointer to a new allocated space
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
 	unsigned int i, j, x, y;
-	
+
 	i = j = 0;
 	if (s1 == NULL)
 	{
