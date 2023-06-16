@@ -4,25 +4,6 @@
 #include <string.h>
 
 /**
- * _memset - fills memory with a constant byte
- *
- * @s: input pointer that represents memory
- *     block to fill
- * @b: characters to fill
- * @n: number of bytes to be filled
- *
- * Return: A pointer to the filled memory area
- */
-
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
-}
-/**
  * _calloc - allocates memory for an array,
  *
  * @nmemb: no of elements
@@ -33,7 +14,8 @@ char *_memset(char *s, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p;
+	char *p;
+	unsigned int i;
 
 	if (nmemb == 0  || size == 0)
 	{
@@ -44,6 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+	for (i = 0; i < nmemb; i++)
+		p[i] = 0;
 	return (p);
-	_memset(p, 0, nmemb * size);
 }
