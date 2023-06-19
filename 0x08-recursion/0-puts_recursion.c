@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /*
- * _puts_recursion -  function that prints a string
+ * printchar -  function that prints a string
+ *
+ * @s: pointer to string
  *
  * Return: nothing
  */
@@ -13,10 +15,21 @@ void printchar(char *s)
 		return;
 	}
 	_putchar(*s);
-	printchar(s+1);
+	printchar(s + 1);
 }
+
+/*
+ * _puts_recursion - function that prints a string
+ *
+ * @s: pointer to a string
+ *
+ * Return: nothing
+ *
+ */
+
 void _puts_recursion(char *s)
 {
 	printchar(s);
+	printf("\n");
 }
 
