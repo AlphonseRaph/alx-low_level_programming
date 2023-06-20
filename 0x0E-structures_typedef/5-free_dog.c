@@ -5,8 +5,8 @@
 /**
  * free_dog - frees dogs.
  *
- * @dog_t *d: pointer to struct
- * 
+ *  @d: pointer to struct
+ *
  * Return: nothing
  */
 
