@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", p);
 		}
 		if (i != (n - 1) && separator != NULL)
-				printf("%s", separator);
+			printf("%s", separator);
 	}
 	va_end(ap);
 	printf("\n");
