@@ -2,21 +2,22 @@
 #include <stdio.h>
 
 /**
- * factorial - eturns the factorial
+ * factorial - returns the factorial
  *
  * @n: number
- * Return 0 Always
+ *
+ * Return: factorial of n
  */
 
 int factorial(int n)
 {
 	if (n < 0)
 	{
-		return -1;
+		return (-1);
 	}
-	if (n == 0)
+	else if (n == 0)
 	{
-		return 1;
+		return (1);
 	}
-	return factorial * factorial(n-1);
+	return (n * factorial(n - 1));
 }

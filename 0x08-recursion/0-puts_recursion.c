@@ -1,25 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
- * printchar -  function that prints a string
- *
- * @s: pointer to string
- *
- * Return: nothing
- */
-void printchar(char *s)
-{
-	if (*s == '\0')
-	{
-		return;
-	}
-	_putchar(*s);
-	printchar(s + 1);
-}
-
-/*
- * _puts_recursion - function that prints a string
+/**
+ * _puts_recursion - prints a string
  *
  * @s: pointer to a string
  *
@@ -29,7 +12,12 @@ void printchar(char *s)
 
 void _puts_recursion(char *s)
 {
-	printchar(s);
-	printf("\n");
+	if (*s)
+	{
+	_putchar(*s);
+	_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
 }
 
