@@ -30,7 +30,7 @@ int _atoi(char *s)
 		oi = oi + ((*(s + i) - 48) * m);
 		m /= 10;
 	}
- 	return (oi * pn);
+	return (oi * pn);
 }
 
 /**
