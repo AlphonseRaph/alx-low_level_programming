@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
-/** set_bit - sets bit to 1
- * 
+/**
+ * set_bit - sets bit to 1
+ *
  * @n: long int
  * @index: index of bit
  *
