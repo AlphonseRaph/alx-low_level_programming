@@ -4,23 +4,25 @@
 #include <string.h>
 #include <stdio.h>
 #include "main.h"
-int main(const char *elfFILE)
+#include <stdlib.h>
+int main(void)
 {
 	ElfW(Ehdr) header;
-	int file = open(elfFile, O_RDONLY);
-	char buffer = malloc(sizeof(header));
+	const char* elfFILE = "100-elf_header.c"; 
+	int file = open(elfFILE, O_RDONLY);
+	char *buffer = malloc(sizeof(header));
 	ssize_t bytesRead;
 	ssize_t i = 0;
 
 	if (buffer == NULL)
 	{
 		fprintf(stderr, "Memory allocation failed");
-		return (0);
+		return (EXIT_FAILURE);
 	}
 	if (file == -1)
 	{
-		fprintf(stderr, "Error opening file '%s': ", filename);
-		return (0);
+		fprintf(stderr, "Error opening file");
+		return (EXIT_FAILURE);
 	}
 	else
 	{
@@ -29,14 +31,14 @@ int main(const char *elfFILE)
 		if (bytesRead == -1)
 		{
 			fprintf(stderr, "Error reading file");
-			return (0);
+			return (EXIT_FAILURE);
 		}
 		if (bytesRead == sizeof(header))
 		{
 			if (memcmp(header.e_ident, ELFMAG, SELFMAG) != 0)
 			{
-				frprintf(stderr, "Not a valid ELF file");
-				return (0);
+				fprintf(stderr, "Not a valid ELF file");
+				return (EXIT_FAILURE);
 			}
 		}
 		else
@@ -44,7 +46,7 @@ int main(const char *elfFILE)
 			buffer[bytesRead] = '\0';
 			while (i < bytesRead)
 			{
-				printf("%s", buffer[i]);
+				printf("%c", buffer[i]);
 				i++;
 			}
 		}
@@ -53,5 +55,5 @@ int main(const char *elfFILE)
 	{
 		fprintf(stderr, "Error closing file");
 	}
-	return (0);
+	return (EXIT_SUCCESS);
 }
